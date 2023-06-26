@@ -80,6 +80,7 @@ main {
     height: calc(100vh - 70px);
     overflow-y: scroll;
     position: relative;
+    z-index: 1;
 }
 
 #sidebar::-webkit-scrollbar {
