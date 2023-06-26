@@ -166,7 +166,7 @@ main {
 
 .sec-content {
     display: block;
-    width: 100%;
+    width: 95%;
     height: max-content;
     background-color: #fff;
     border-radius: 10px;
@@ -181,7 +181,7 @@ main {
 }
 
 #profile {
-    min-width: 300px;
+    min-width: 250px;
     max-width: 400px;
 }
 
@@ -207,6 +207,11 @@ input#new-picture {
     margin: auto;
     width: 80vw;
     max-width: 150px;
+}
+
+#my-data {
+    min-width: 500px;
+    max-width: 1000px;
 }
 
 div.edit-data {
@@ -235,6 +240,36 @@ div#div-adresscomplement {
     display: flex;
     justify-content: right;
     padding: 15px 0;
+}
+
+
+
+@media (max-width: 1120px) {
+    .content {
+        padding: 10px 2vw;
+        display: block;
+    }
+
+    #profile {
+        min-width: none;
+        max-width: none;
+        margin: auto;
+    }
+
+    #my-data {
+        min-width: auto;
+        max-width: none;
+        margin: 10px auto;
+    }
+
+    .little-input {
+        display: block;
+    }
+    
+    div#div-userCPF, div#div-userRG, div#userCellphone, div#div-userBirth,div#div-adressNumber, div#div-adresscomplement {
+        width: 100%;
+    }
+    
 }
 
 
