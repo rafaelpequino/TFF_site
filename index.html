@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/jci1vpt.css">
+    <title>TFF - Transporte Fernandes Fonseca</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/a474f4b275.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <img src="img/Logotipo_TFF (DarkBlue-White).png" alt="Logo TFF" id="logo-head">
+
+            <div id="btn-open-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="navbar">
+                <a href="#home" class="link-nav">Home</a>
+                <a href="#sobre-nos" class="link-nav">Sobre nós</a>
+                <a href="#solicitar" class="link-nav">Solicitar</a>
+                <a href="#contato" class="link-nav">Contato</a>
+                <a href="#" id="link-login">
+                    LogIn
+                    <i class="fa-solid fa-key"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div id="inside-home">
+            <div id="text-home">
+                <h1>Descubra o mundo e viva experiências incríveis conosco!</h1>
+                <a href="#solicitar" id="btn-home-buy">Compre sua passagem</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <div id="inside-sobre">
+            <div id="img-sobre">
+                <h1 id="title-sobre-small">Sobre nós</h1>
+                <img src="img/Wavy_Tsp-01_Single-10.png" alt="Ilustração de ônibus">
+            </div>
+
+            <div id="text-sobre">
+                <h1 id="title-sobre-big">Sobre nós</h1>
+                <p>A <b>TFF Transporte Fernandes Fonseca</b> é comprometida em fornecer aos nossos passageiros uma experiência segura, eficiente e confiável.</p>
+                <p>Temos orgulho em oferecer um serviço de qualidade com motoristas treinados e experientes, veículos bem conservados e modernos sistemas de rastreamento e monitoramento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solicitar">
+        <div id="inside-solicitar">
+            <img src="img/icone_TFF (Gray-White).png" alt="Logo TFF" id="logo-tff-solicitar">
+            <h3>Encontre sua passagem</h3>
+
+            <form action="" method="post" id="form-search">
+
+                <div class="input-search" id="select-from">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <select name="from" id="from">
+                        <option value="" disabled selected >de onde?</option>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                </div>
+
+                <div class="input-search" id="select-to">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <select name="to" id="to" placeholder="pra">
+                        <option value="" disabled selected >pra onde?</option>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                </div>
+
+                <div id="select-date">
+                    <div class="input-search input-select-date" id="input-select-date-go">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input placeholder="data de ida" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date-go" id="date-go">
+                    </div>
+                    <div class="input-search input-select-date">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input placeholder="data de ida" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date-back" id="date-back">
+                    </div>
+                </div>
+
+                <div class="input-search" id="btn-submit-search">
+                    <input type="submit" value="Buscar">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <div id="inside-contato">
+            <div id="send-message">
+                <h3>Contato</h3>
+                <h4>Dúvidas, informações, ajuda...</h4>
+
+                <form action="" method="post" id="form-contact">
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                    <input type="text" name="cellphone" id="cellphone" placeholder="Celular">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <textarea name="message" id="message" rows="3" placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Enviar" id="submit-form-contact">
+                </form>
+
+            </div>
+        </div>
+
+        <div id="info-contact">
+            <h3>Info</h3>
+
+            <div class="info" id="tel">
+                <i class="fa-solid fa-phone"></i>
+                <span>(11) 98765-4321</span>
+            </div>
+
+            <div class="info" id="email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>contato@tff.com.br</span>
+            </div>
+
+            <div class="info" id="clock">
+                <i class="fa-solid fa-clock"></i>
+                <span>09h às 17h</span>
+            </div>
+        </div>
+
+        <div id="yellow"></div>
+    </section>
+
+    <footer>
+        <div id="inside-footer">
+            <div class="column-footer column-footer-left">
+                <img src="img/Isologo_TFF (White).png" alt="Logo TFF" id="logo-footer">
+                <a href="#">Políticas de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+
+            <div class="column-footer column-footer-center">
+                <a href="#">Home</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Solicitar</a>
+                <a href="#">Contato</a>
+                <a href="#">LogIn</a>
+            </div>
+
+            <div class="column-footer column-footer-right">
+                <h5>Formas de pagamento</h5>
+                <div class="forma-pagto">
+                    <i class="fa-brands fa-pix"></i>
+                    <span>Pix</span>
+                </div>
+                <div class="forma-pagto">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Cartão de crédito</span>
+                </div>
+                <div class="forma-pagto">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>Transferência Bancária</span>
+                </div>
+            </div>
+        </div>
+        <div id="copy">Copyright © 2023 - Todos os direitos reservados</div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,859 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --azul-escuro: #0D1982;
+    --azul-claro: #59A2EA;
+    --amarelo: #EACB31;
+    --branco: #F0F0F0;
+    --preto: #262626;
+    --font-principal: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1400px) {
+    h1#title-sobre-big, h1#title-sobre-small {
+        font-size: 3vw;
+    }
+
+    #text-sobre > p {
+        font-size: 1.4vw;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 0 3vw;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+div#head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img#logo-head {
+    height: 70px;
+}
+
+div#btn-open-nav {
+    display: none;
+}
+
+nav#navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav#navbar > a.link-nav {
+    font: normal normal 1.1rem var(--font-principal);
+    color: var(--preto);
+    text-decoration: none;
+    margin: 0 20px;
+    opacity: 0.9;
+    transition: 0.3s;
+    display: block;
+    position: relative;
+}
+
+a.link-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--amarelo);
+    transition: width 0.3s ease-in-out;
+}
+
+a.link-nav:hover::after {
+    width: 100%; 
+}
+
+nav#navbar > a#link-login {
+    display: block;
+    font: normal normal 1.1rem var(--font-principal);
+    color: var(--preto);
+    text-decoration: none;
+    margin: 0 0 0 20px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: var(--amarelo);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+a#link-login > i {
+    margin-left: 5px;
+}
+
+nav#navbar > a.link-nav:hover, nav#navbar > a#link-login:hover {
+    opacity: 1;
+}
+
+section#home {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    min-height: calc(100vh - 90px);
+    height: max-content;
+    background-image: url(../img/traffic-vehicle-urban-reflections-city.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 0 10vw 0;
+}
+
+section#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529));
+}
+
+div#inside-home {
+    width: 100%;
+    max-width: 1400px;
+    z-index: 1;
+}
+
+div#text-home {
+    width: auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+#text-home > h1 {
+    font: normal bolder 3vw var(--font-principal);
+    line-height: 1.2em;
+    color: var(--branco);
+    text-shadow: 0 0 10px var(--preto);
+    text-align: center;
+}
+
+#text-home > a#btn-home-buy {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font: normal normal 1.2rem var(--font-principal);
+    color: var(--preto);
+    padding: 10px 20px;
+    margin: 30px auto 0;
+    background-color: var(--amarelo);
+    border: 2px solid var(--amarelo);
+    width: 70vw;
+    max-width: 300px;
+    border-radius: 15px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+#text-home > a#btn-home-buy:hover {
+    background-color: var(--branco);
+    border: 2px solid var(--branco);
+    opacity: 1;
+}
+
+
+section#sobre-nos {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    min-height: calc(100vh - 90px);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+div#inside-sobre {
+    width: 100%;
+    max-width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#img-sobre {
+    width: 40%;
+}
+
+div#img-sobre > img {
+    width: 100%;
+    max-height: 80vh;
+}
+
+div#text-sobre {
+    width: 50%;
+}
+
+h1#title-sobre-big, h1#title-sobre-small {
+    font: normal bold 2.3rem var(--font-principal);
+    color: var(--preto);
+    margin-bottom: 20px;
+}
+
+h1#title-sobre-small {
+    display: none;
+}
+
+#text-sobre > p {
+    
+    font: normal normal 1.2rem var(--font-principal);
+    color: var(--preto);
+    text-indent: 20px;
+    text-align: justify;
+    margin: 10px 0;
+    line-height: 1.6em;
+}
+
+section#solicitar {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-image: url(../img/jared-murray-NSuufgf-BME-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+section#solicitar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+div#inside-solicitar {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    padding: 25px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 2;
+}
+
+img#logo-tff-solicitar {
+    display: block;
+    width: 60vw;
+    max-width: 250px;
+    margin: 0 auto 40px;
+}
+
+#inside-solicitar > h3 {
+    font: normal bold 1.4rem var(--font-principal);
+    text-align: center;
+    color: var(--preto);
+}
+
+form#form-search {
+    display: block;
+    width: 75vw;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+div#select-from > select {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.357);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div#select-to > select {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.357);
+
+}
+
+div.input-search {
+    width: 100%;
+    position: relative;
+}
+
+div.input-search > i.fa-solid {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    color: var(--preto);
+    font-size: 1.5em;
+}
+
+div.input-search > select {
+    width: 100%;
+    border: none;
+    padding: 15px 15px 15px 60px;
+    font: normal 1.1em var(--font-principal);
+}
+
+div.input-search > select:selected {
+    outline: none;
+}
+
+div#select-date {
+    display: flex;
+}
+
+div.input-select-date > input {
+    width: 100%;
+    border: none;
+    padding: 15px 5px 15px 60px;
+    font: normal 1.1em var(--font-principal);
+}
+
+div#input-select-date-go {
+    border-right: 1px solid rgba(0, 0, 0, 0.357);
+}
+
+div#btn-submit-search > input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font: bold 1.2em var(--font-principal);
+    background-color: var(--amarelo);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+div#btn-submit-search > input:hover {
+    opacity: 1;    
+}
+
+input:focus {
+    transform: none;
+    outline: none;
+}
+
+input[disabled] {
+    opacity: 0.8;
+}
+
+section#contato {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    min-height: calc(100vh - 90px);
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0;
+}
+
+div#inside-contato {
+    width: 100%;
+    max-width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+div#send-message {
+    width: 100vw;
+    max-width: 500px;
+    padding: 0 30px;
+}
+
+#send-message > h3{
+    font: normal bold 1.8rem var(--font-principal);
+    text-align: left;
+    color: var(--azul-escuro);
+    margin-bottom: 10px;
+}
+
+#send-message > h4{
+    font: normal bold 1rem var(--font-principal);
+    text-align: left;
+    color: var(--preto);
+    margin-bottom: 30px;
+}
+
+form#form-contact {
+    display: block;
+    width: 80vw;
+    max-width: 480px;
+}
+
+#form-contact > input, #form-contact > textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.357);
+    margin: 30px 0;
+    padding: 15px;
+    font: normal normal 1.1em var(--font-principal);
+}
+
+input#submit-form-contact {
+    background-color: var(--preto);
+    color: var(--branco);
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input#submit-form-contact:hover {
+    opacity: 1;
+}
+
+div#yellow {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 300px);
+    width: 300px;
+    height: 100%;
+    min-height: calc(100vh - 90px);
+    background-color: var(--amarelo);
+    z-index: 1;
+}
+
+div#info-contact {
+    position: absolute;
+    top: 50%;
+    right: -300px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    min-height: 400px;
+    padding: 40px;
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-contact > h3 {
+    font: normal bold 1.4rem var(--font-principal);
+    text-align: left;
+    color: var(--amarelo);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info > span {
+    font: normal normal 1.2em var(--font-principal);
+    color: var(--branco);
+}
+
+.info > i {
+    font-size: 1.5em;
+    color: var(--branco);
+    margin-right: 20px;
+}
+
+
+footer {
+    background-color: var(--preto);
+    width: 100%;
+    height: max-content;
+    min-height: 380px;
+    padding: 16px;
+    border-top: 2px solid var(--branco);
+}
+
+div#inside-footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.column-footer {
+    margin: auto;
+}
+
+img#logo-footer {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+div.column-footer-left > a {
+    display: block;
+    color: var(--branco);
+    font: normal normal 0.9em var(--font-principal);
+    text-align: center;
+    margin: 5px;
+    opacity: 0.8;
+    letter-spacing: 0.1em;
+}
+
+div.column-footer-center > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font: normal normal 1em var(--font-principal);
+    color: var(--branco);
+    margin: 15px 0;
+}
+
+div.column-footer-right > h5 {
+    font: normal bold 1.1em var(--font-principal);
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+div.forma-pagto {
+    margin: 10px 0;
+}
+
+div.forma-pagto > span{
+    font: normal normal 1em var(--font-principal);
+    color: var(--branco);
+}
+
+div.forma-pagto > i{
+    font-size: 1.2em;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+div#copy {
+    font: normal normal 0.9em var(--font-principal);
+    color: var(--branco);
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    div#yellow {
+        left: calc(100% - 200px);
+        width: 200px;
+    }
+
+    div#info-contact {
+        right: -200px;
+        width: 400px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    section#home {
+        padding: 90px 5vw;
+    }
+
+    #text-home > h1 {
+        font-size: 4vw;
+    }
+
+    h1#title-sobre-big, h1#title-sobre-small {
+        font-size: 3.5vw;
+    }
+
+    #text-sobre > p {
+        font-size: 
+        1.7vw;
+    }
+
+    div#send-message {
+        padding: 0 3vw;
+    }
+
+    div#yellow {
+        left: calc(100% - 100px);
+        width: 100px;
+    }
+
+    div#info-contact {
+        right: -150px;
+        width: 300px;
+    }
+    
+
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    header {
+        padding: 0 6vw;
+    }
+    
+    div#btn-open-nav {
+        width: 35px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div#btn-open-nav > div {
+        width: 100%;
+        height: 4px;
+        border-radius: 15px;
+        background-color: var(--preto);
+    }
+
+    nav#navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--branco);
+        z-index: 2;
+    }
+
+    nav#navbar > a.link-nav {
+        display: block;
+        width: max-content;
+        margin: auto;
+    }
+    
+    nav#navbar > a#link-login {
+        margin: auto;
+    }
+
+    section#home {
+        background-image: url(../img/traffic-vehicle-urban-reflections-city-m.jpg);
+    }
+
+    div#text-home {
+        width: auto;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    div#inside-sobre {
+        display: block;
+        padding: 25px 3vw;
+    }
+    
+    div#img-sobre, div#text-sobre {
+        width: 100%;
+    }
+    
+    div#img-sobre > img {
+        display: block;
+        width: 75vw;
+        max-width: 350px;
+        margin: 30px auto;
+    }
+    
+    h1#title-sobre-big {
+        display: none;
+    }
+    
+    h1#title-sobre-small {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.2em;
+        text-align: center;
+        margin: 0;
+    }
+    
+    #text-home > h1 {
+        font-size: 4.8vw;
+    }
+    
+    #text-home > a {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 70vw;
+        max-width: max-content;
+    }
+
+    #text-sobre > p {
+        font-size: 1.3em;
+    }
+    
+
+    form#form-contact {
+        max-width: 400px;
+    }
+
+    div#inside-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    div.column-footer {
+        margin: 40px 0;
+    }
+
+    div.column-footer-right > h5 {
+        text-align: center;
+    }
+
+    div.forma-pagto {
+        display: block;
+        width: max-content;
+        margin: 15px auto;
+
+    }
+
+}
+
+@media (max-width: 775px) {
+
+    section#solicitar {
+        padding: 5px;
+        height: max-content;
+    }
+
+    div#inside-solicitar {
+        width: 100%;
+        max-width: none;
+        height: 90%;
+        padding: 20px;
+        border-radius: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    section#contato {
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 90px);
+        height: max-content;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#yellow {
+        display: none;
+    }
+
+    div#info-contact {
+        position: static;
+        top: 50%;
+        z-index: 2;
+        transform: unset;
+        width: auto;
+        max-width: none;
+        min-height: 400px;
+    }
+
+    div#send-message {
+        margin: auto;
+    }
+
+    #send-message > h3{
+        text-align: center;
+    }
+    
+    #send-message > h4{
+        text-align: center;
+    }
+    
+    form#form-contact {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #text-home > h1 {
+        font-size: 7vw;
+    }
+
+    div#select-date {
+        display: block;
+    }
+
+    div#input-select-date-go {
+        border: none;
+    }
+
+    #date-go {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.357);
+    }    
+    
+    div.input-select-date > input, div.input-search > select {
+        font-size: 1em;
+    }
+
+    div.input-search > i.fa-solid {
+        left: 25px;
+        font-size: 1.2em;
+    }
+    
+    div.input-search > select {
+        padding: 15px 15px 15px 40px;
+    }
+    div.input-select-date > input {
+        padding: 15px 5px 15px 42px;
+    }
+
+    
+
+}
+
+@media (max-width: 500px) {
+
+    #text-home > h1 {
+        font-size: 8vw;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    section#home {
+        background-image: url(../img/traffic-vehicle-urban-reflections-city-m.jpg);
+    }
+
+    #text-home > h1 {
+        font-size: 2em;
+    }
+
+}
