@@ -278,6 +278,7 @@ div#div-adresscomplement {
     #btn-sidebar {
         display: block;
         margin-right: 30px;
+        cursor: pointer;
     }
 
     #btn-sidebar > div {
