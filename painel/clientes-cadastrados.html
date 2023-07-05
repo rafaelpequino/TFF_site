@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/jci1vpt.css">
+    <title>Clientes Cadastrados - TFF</title>
+    <link rel="stylesheet" href="assets_painel/style.css">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="assets_painel/script.js"></script>
+    <script src="https://kit.fontawesome.com/a474f4b275.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <div id="btn-sidebar">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="info-header">
+        <div class="logo">
+            <img src="../img/logotipo_TFF (White).png" alt="Logo TFF">
+        </div>
+    </div>
+
+    <div class="info-header">
+        <div id="welcome">Bem-vindo, Victor</div>
+        <img src="../img/users/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Imagem do usuário" class="user-img" id="btn-open-dropdown">
+        <div id="dropdown" class="dropdown-close">
+            <a href="#"><i class="fa-solid fa-user"></i> Meu perfil</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+        </div>
+    </div>
+</header>
+
+<!--FIM HEADER-->
+
+<main>
+    <div id="sidebar" class="sidebar-close">
+        <h6>Home</h6>
+        <a href="#"><i class="fa-solid fa-house"></i> Administrador <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+
+        <h6>Financeiro</h6>
+        <a href="#"><i class="fa-solid fa-money-bill"></i> Pagamentos <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-rotate-left"></i> Extornos <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-user-tie"></i> Jurídico <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+        
+        <h6>Clientes</h6>
+        <a href="#"><i class="fa-solid fa-person"></i> Clientes do dia <i class="fa-solid fa-chevron-right"></i></a>
+        <a class="sidebar-active" href="#"><i class="fa-solid fa-person"></i> Clientes cadastrados <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-headset"></i> SAC <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+        
+        <h6>Funcionários</h6>
+        <a href="#"><i class="fa-solid fa-person-chalkboard"></i> Funcionários <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+        
+        <h6>Viagens</h6>
+        <a href="#"><i class="fa-solid fa-list"></i> Histórico de viagens <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Agendamento de viagens <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-route"></i> Percursos <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+        
+        <h6>Veículos e Motoristas</h6>
+        <a href="#"><i class="fa-solid fa-bus-simple"></i> Veículos cadastrados <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-id-card"></i> Motoristas cadastrados <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-comments"></i> Contato com motoristas <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+
+    </div><!--sidebar-->
+    <div class="content">
+
+        <section class="sec-content" id="my-data">
+            <h5>Clientes cadastrados</h5>
+            <hr>
+
+            <div class="users-table">
+                <form action="" method="post" id="form-search-user">
+                    <div class="mb-3">
+                        <label for="search-user" class="form-label">Procurar</label>
+                        <input type="text" name="search-user" id="search-user" class="form-control" placeholder="nome ou e-mail...">
+                    </div>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome Completo</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">Data nascimento</th>
+                        <th scope="col">Data registro</th>
+                        <th scope="col">Viagens</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Rafael Pequino Freire</td>
+                        <td>o.rafaelpequino@gmail.com</td>
+                        <td>(11) 97566-9706</td>
+                        <td>09/07/2006</td>
+                        <td>01/06/2023</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Amanda Fernandes Fonseca</td>
+                        <td>amandafonseca@gmail.com</td>
+                        <td>(11) 98765-4321</td>
+                        <td>16/06/2005</td>
+                        <td>21/06/2023</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+    </div><!--content-->
+</main>
+    
+</body>
+</html>

@@ -28,6 +28,11 @@
     box-sizing: border-box;
 } 
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     display: block;
     width: 100%;
@@ -116,7 +121,7 @@ section#home {
     min-height: 360px;
     min-height: calc(100vh - 90px);
     height: max-content;
-    background-image: url(../img/traffic-vehicle-urban-reflections-city.jpg);
+    background-image: url(../img/pexels-sasha-pshenkov-10849511.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -141,7 +146,7 @@ section#home::before {
 
 div#inside-home {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     z-index: 1;
 }
 

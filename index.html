@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/jci1vpt.css">
     <title>TFF - Transporte Fernandes Fonseca</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="assets/script.js"></script>
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/a474f4b275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,17 +30,14 @@
                 <a href="#sobre-nos" class="link-nav">Sobre nós</a>
                 <a href="#solicitar" class="link-nav">Solicitar</a>
                 <a href="#contato" class="link-nav">Contato</a>
-                <a href="#" id="link-login">
-                    LogIn
-                    <i class="fa-solid fa-key"></i>
-                </a>
+                <a href="login.html" id="link-login" target="_blank">LogIn<i class="fa-solid fa-key"></i></a>
             </nav>
         </div>
     </header>
 
     <section id="home">
         <div id="inside-home">
-            <div id="text-home">
+            <div data-aos="fade-up" id="text-home">
                 <h1>Descubra o mundo e viva experiências incríveis conosco!</h1>
                 <a href="#solicitar" id="btn-home-buy">Compre sua passagem</a>
             </div>
@@ -46,12 +46,12 @@
 
     <section id="sobre-nos">
         <div id="inside-sobre">
-            <div id="img-sobre">
+            <div id="img-sobre" data-aos="fade-right">
                 <h1 id="title-sobre-small">Sobre nós</h1>
                 <img src="img/Wavy_Tsp-01_Single-10.png" alt="Ilustração de ônibus">
             </div>
 
-            <div id="text-sobre">
+            <div data-aos="fade-left" id="text-sobre">
                 <h1 id="title-sobre-big">Sobre nós</h1>
                 <p>A <b>TFF Transporte Fernandes Fonseca</b> é comprometida em fornecer aos nossos passageiros uma experiência segura, eficiente e confiável.</p>
                 <p>Temos orgulho em oferecer um serviço de qualidade com motoristas treinados e experientes, veículos bem conservados e modernos sistemas de rastreamento e monitoramento.</p>
@@ -105,7 +105,7 @@
     </section>
     
     <section id="contato">
-        <div id="inside-contato">
+        <div data-aos="fade-right" id="inside-contato">
             <div id="send-message">
                 <h3>Contato</h3>
                 <h4>Dúvidas, informações, ajuda...</h4>
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div id="info-contact">
+        <div data-aos="fade-left" id="info-contact">
             <h3>Info</h3>
 
             <div class="info" id="tel">
@@ -177,6 +177,15 @@
         </div>
         <div id="copy">Copyright © 2023 - Todos os direitos reservados</div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 </body>
 </html>
