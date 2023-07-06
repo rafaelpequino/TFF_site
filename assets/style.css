@@ -249,10 +249,7 @@ section#solicitar {
     height: max-content;
     min-height: calc(100vh - 90px);
     background-color: rgb(235,235,235);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3vw;
+    padding: 0 2vw;
 }
 
 
@@ -263,7 +260,6 @@ div#inside-solicitar {
     padding: 20px;
     border-radius: 5px;
     margin: auto;
-    padding: 35px;
     display: block;
     z-index: 2;
 }
@@ -294,15 +290,43 @@ div#inside-solicitar {
 .travel {
     width: 100%;
     display: grid;
-    grid-template-columns: 80px 1fr 30px 1fr 120px;
-    padding: 30px 40px;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: 80px 1fr 120px;
+    padding: 30px;
     border-radius: 25px;
     background-color: white;
     margin: 20px 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.093);
+    overflow: hidden;
 }
 
-.travel > div {
+.travel > div > span {
+    display: none;
+}
+
+.route {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr max-content 1fr;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.route > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.route > div > span {
+    display: none;
+}
+
+.travel > div:nth-child(odd) {
     width: 100%;
     height: 100%;
     display: flex;
@@ -311,30 +335,40 @@ div#inside-solicitar {
     font-size: 18px;
 }
 
-.travel > div.route {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.route > i {
-    margin: 0 20px;
-}
-
 .travel > div > a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 15px;
     border-radius: 10px;
     border: 2px solid var(--amarelo);
+    background-color: var(--amarelo);
     color: var(--preto);
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.3s;
+    opacity: 0.9;
 }
 
 .travel > div > a:hover {
-    background-color: var(--amarelo);
+    background-color: transparent;
+}
+
+a#see-all-travels {
+    display: block;
+    width: max-content;
+    margin: 10px auto;
+    font-family: var(--font-principal);
+    color: var(--preto);
+    text-decoration: none;
+    background-color: var(--azul-claro);
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--azul-claro);
+    transition: 0.3s;
+}
+
+a#see-all-travels:hover {
+    background-color: transparent;
 }
 
 section#contato {
@@ -472,6 +506,7 @@ div#inside-footer {
     margin: 0 auto 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
 }
 
 div.column-footer {
@@ -676,7 +711,20 @@ div#copy {
     #text-sobre > p {
         font-size: 1.3em;
     }
+
+    .travel {
+        grid-template-columns: 60px 1fr 120px;
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
     
+    .route {
+        font-size: 16px;
+    }
+    
+    .travel > div:nth-child(odd) {
+        font-size: 16px;
+    }
 
     form#form-contact {
         max-width: 400px;
@@ -707,10 +755,6 @@ div#copy {
 
     section#home {
         background-attachment: scroll;
-    }
-
-    section#solicitar {
-        padding: 5px;
     }
 
     section#contato {
@@ -792,10 +836,49 @@ div#copy {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     #text-home > h1 {
         font-size: 8vw;
+    }
+
+    .travel {
+        display: block;
+        padding: 20px 5vw;
+        max-width: max-content;
+        margin: 20px auto;
+    }
+    
+    .travel > div > span {
+        display: inline;
+        padding-right: 15px;
+    }
+
+
+    .route {
+        display: block;
+        margin: 15px 0 ;
+    }
+
+    .route > div {
+        margin-bottom: 8px;
+    }
+
+    .route > div > span {
+        display: inline;
+        padding-right: 15px;
+    }
+
+    .route > div > i {
+        display: none;
+    }
+
+    .travel > div > a {
+        width: 100%;
+    }
+    
+    .route > div {
+        text-align: left;
     }
 
 }
