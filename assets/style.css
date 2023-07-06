@@ -29,7 +29,7 @@
 } 
 
 body {
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -667,10 +667,6 @@ div#copy {
         margin: auto;
     }
 
-    section#home {
-        background-image: url(../img/traffic-vehicle-urban-reflections-city-m.jpg);
-    }
-
     div#text-home {
         width: auto;
         max-width: 80%;
@@ -852,10 +848,6 @@ div#copy {
 }
 
 @media (max-width: 400px) {
-
-    section#home {
-        background-image: url(../img/traffic-vehicle-urban-reflections-city-m.jpg);
-    }
 
     #text-home > h1 {
         font-size: 2em;

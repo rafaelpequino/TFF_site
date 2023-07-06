@@ -23,7 +23,8 @@ window.addEventListener('load', function() {
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-
+    AOS.init(); 
+    
     var links = Array.from(document.querySelectorAll(".link-nav"));
     var btnHomeBuy = document.getElementById("btn-home-buy");
     
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $('#cellphone').mask('(00) 00000-0000');
 })
+
   
   
   
