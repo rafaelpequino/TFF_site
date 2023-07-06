@@ -5,8 +5,10 @@ window.addEventListener('scroll', function() {
 
   if (scrollTop > 0) {
       header.style.backgroundColor = '#ffffff';
+      header.style.borderBottom = "1px solid rgba(0, 0, 0, 0.300)"
   } else {
       header.style.backgroundColor = 'transparent';
+      header.style.borderBottom = "none"
   }
 });
 
@@ -16,8 +18,10 @@ window.addEventListener('load', function() {
 
   if (scrollTopStart > 0) {
     header.style.backgroundColor = '#ffffff';
+    header.style.borderBottom = "1px solid rgba(0, 0, 0, 0.300)"
   } else {
     header.style.backgroundColor = 'transparent';
+    header.style.borderBottom = "none"
   }
 
 })
