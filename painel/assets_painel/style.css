@@ -115,6 +115,10 @@ main {
     position: relative;
 }
 
+main#main-complete-register {
+    background-color: rgb(235,235,235);
+}
+
 #sidebar {
     width: 100vw;
     max-width: 300px;
@@ -206,6 +210,16 @@ main {
     background-color: #e7e7e7;
 }
 
+#content-complete-register {
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+}
+
+#content-complete-register::-webkit-scrollbar {
+    width: 0; /* Largura da barra de rolagem */
+}
+
 .sec-content {
     display: block;
     width: 95%;
@@ -248,8 +262,7 @@ input#new-picture {
 #btn-new-picture {
     display: block;
     margin: auto;
-    width: 80vw;
-    max-width: 150px;
+    width: max-content;
 }
 
 #my-data {
@@ -266,15 +279,15 @@ div.edit-data {
     justify-content: space-between;
 }
 
-div#div-userCPF, div#div-userRG, div#userCellphone, div#div-userBirth {
+div#div-userCPF, div#div-userRG, div#div-userCellphone, div#div-userBirth, div#div-adressState, div#div-adressCity {
     width: 47.5%;
 }
 
-div#div-adressNumber {
+div#div-adressNumber, div#div-adressCEP {
     width: 30%;
 }
 
-div#div-adresscomplement {
+div#div-adresscomplement, div#div-adressBairro {
     width: 65%;
 }
 
@@ -309,7 +322,7 @@ div#div-adresscomplement {
         display: block;
     }
     
-    div#div-userCPF, div#div-userRG, div#userCellphone, div#div-userBirth,div#div-adressNumber, div#div-adresscomplement {
+    div#div-userCPF, div#div-userRG, div#div-userCellphone, div#div-userBirth,div#div-adressNumber, div#div-adresscomplement, div#div-adressBairro, div#div-adressCEP, div#div-adressState, div#div-adressCity {
         width: 100%;
     }
     

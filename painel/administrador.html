@@ -134,19 +134,43 @@
 
                     <h6>Dados residenciais</h6>
 
+                    <div class="little-input">
+                        <div class="mb-3" id="div-userCEP">
+                            <label for="userCEP" class="form-label">CEP*</label>
+                            <input type="text" class="form-control" id="userCEP" name="userCEP" placeholder="00000-000" required> 
+                        </div>
+                        <div class="mb-3" id="div-userBairro">
+                            <label for="userBairro" class="form-label">Bairro*</label>
+                            <input type="text" class="form-control" id="userBairro" name="userBairro" required disabled> 
+                        </div>
+                    </div>
+
                     <div class="mb-3">
                         <label for="useraddress" class="form-label">Endereço*</label>
-                        <input type="text" class="form-control" id="useraddress" name="useraddress" value="Rua de exemplo" disabled> 
+                        <input type="text" class="form-control" id="useraddress" name="useraddress" required disabled> 
                     </div>
 
                     <div class="little-input">
                         <div class="mb-3" id="div-adressNumber">
                             <label for="adressNumber" class="form-label">Nº*</label>
-                            <input type="text" class="form-control" id="adressNumber" name="adressNumber" value="123" disabled> 
+                            <input type="text" class="form-control" id="adressNumber" name="adressNumber" required> 
                         </div>
                         <div class="mb-3" id="div-adresscomplement">
                             <label for="adresscomplement" class="form-label">Complemento (opcional)</label>
-                            <input type="text" class="form-control" id="adresscomplement" name="adresscomplement" value="Casa 3" disabled> 
+                            <input type="text" class="form-control" id="adresscomplement" name="adresscomplement" placeholder="'Apto. X'; 'Casa X'" required> 
+                        </div>
+                    </div>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-adressState">
+                            <label for="adressState" class="form-label">Complemento (opcional)</label>
+                            <select class="form-select" name="adressState" id="adressState">
+                                <option value="">Selecione um estado</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" id="div-adressCity">
+                            <label for="adressCity" class="form-label">Cidade*</label>
+                            <input type="text" class="form-control" id="adressCity" name="adressCity" required> 
                         </div>
                     </div>
 

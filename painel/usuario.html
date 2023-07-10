@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/jci1vpt.css">
+    <title>Painel - TFF</title>
+    <link rel="stylesheet" href="assets_painel/style.css">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="assets_painel/script.js"></script>
+    <script src="https://kit.fontawesome.com/a474f4b275.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <div id="btn-sidebar">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="info-header">
+        <div class="logo">
+            <img src="../img/logotipo_TFF (White).png" alt="Logo TFF">
+        </div>
+    </div>
+
+    <div class="info-header">
+        <div id="welcome">Bem-vindo, Victor</div>
+        <img src="../img/users/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Imagem do usuário" class="user-img" id="btn-open-dropdown">
+        <div id="dropdown" class="dropdown-close">
+            <a href="#"><i class="fa-solid fa-user"></i> Meu perfil</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
+        </div>
+    </div>
+</header>
+
+<!--FIM HEADER-->
+
+<main>
+    <div id="sidebar" class="sidebar-close">
+        <h6>Home</h6>
+        <a class="sidebar-active" href="#"><i class="fa-solid fa-house"></i> Meu painel <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+        
+        <h6>Viagens</h6>
+        <a href="#"><i class="fa-solid fa-list"></i> Histórico de viagens <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Reservas Atuais <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+
+        <h6>Financeiro</h6>
+        <a href="#"><i class="fa-solid fa-money-bill"></i> Pagamentos <i class="fa-solid fa-chevron-right"></i></a>
+        <hr>
+
+    </div><!--sidebar-->
+    <div class="content">
+        <section class="sec-content" id="profile">
+            <h5>Perfil</h5>
+            <hr>
+            <div class="info-profile">
+                <img src="../img/users/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Foto do usuário">
+                <div>Rafael Pequino Freire</div>
+            </div>
+
+            <form action="" method="post">
+                <label for="new-picture" class="btn btn-primary" id="btn-new-picture"><i class="fa-solid fa-image"></i> Nova foto</label>
+                <input type="file" name="new-picture" id="new-picture">
+            </form>
+
+        </section>
+
+        <section class="sec-content" id="my-data">
+            <h5>Meus dados</h5>
+            <hr>
+            <div class="edit-data">
+                <form action="" method="post">
+                    <h6>Dados pessoais</h6>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Nome Completo*</label>
+                        <input type="text" class="form-control" id="userName" name="userName" value="Rafael Pequino Freire" disabled>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">E-mail*</label>
+                        <input type="email" class="form-control" id="userEmail" name="userEmail" value="rafapequino@gmail.com" disabled> 
+                    </div>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-userCellphone">
+                            <label for="userCellphone" class="form-label">Celular*</label>
+                            <input type="text" class="form-control" id="userCellphone" name="userCellphone" value="(11) 97566-9706" disabled> 
+                        </div>
+
+                        <div class="mb-3" id="div-userBirth">
+                            <label for="userBirth" class="form-label">Data de Nascimento*</label>
+                            <input type="text" class="form-control" id="userBirth" name="userBirth" value="09/07/2006" disabled> 
+                        </div>
+                    </div>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-userCPF">
+                            <label for="userCPF" class="form-label">CPF*</label>
+                            <input type="text" class="form-control" id="userCPF" name="userCPF" value="123.456.789-00" disabled> 
+                        </div>
+
+                        <div class="mb-3" id="div-userRG">
+                            <label for="userRG" class="form-label">RG*</label>
+                            <input type="text" class="form-control" id="userRG" name="userRG" value="12.345.678-0" disabled> 
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h6>Dados residenciais</h6>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-adressCEP">
+                            <label for="adressCEP" class="form-label">CEP*</label>
+                            <input type="text" class="form-control" id="adressCEP" name="adressCEP" placeholder="00000-000" required> 
+                        </div>
+                        <div class="mb-3" id="div-adressBairro">
+                            <label for="adressBairro" class="form-label">Bairro*</label>
+                            <input type="text" class="form-control" id="adressBairro" name="adressBairro" required disabled> 
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="adress" class="form-label">Endereço*</label>
+                        <input type="text" class="form-control" id="adress" name="adress" required disabled> 
+                    </div>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-adressNumber">
+                            <label for="adressNumber" class="form-label">Nº*</label>
+                            <input type="text" class="form-control" id="adressNumber" name="adressNumber" required> 
+                        </div>
+                        <div class="mb-3" id="div-adresscomplement">
+                            <label for="adresscomplement" class="form-label">Complemento (opcional)</label>
+                            <input type="text" class="form-control" id="adresscomplement" name="adresscomplement" placeholder="'Apto. X'; 'Casa X'" required> 
+                        </div>
+                    </div>
+
+                    <div class="little-input">
+                        <div class="mb-3" id="div-adressState">
+                            <label for="adressState" class="form-label">Complemento (opcional)</label>
+                            <select class="form-select" name="adressState" id="adressState">
+                                <option value="">Selecione um estado</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" id="div-adressCity">
+                            <label for="adressCity" class="form-label">Cidade*</label>
+                            <input type="text" class="form-control" id="adressCity" name="adressCity" required> 
+                        </div>
+                    </div>
+
+                    <div id="buttons-new-data">
+                        <button type="submit" class="btn btn-secondary">Editar dados</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div><!--content-->
+</main>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+</body>
+</html>

@@ -355,12 +355,14 @@ div#inside-solicitar {
 
 a#see-all-travels {
     display: block;
-    width: max-content;
+    width: 90vw;
+    max-width: 320px;
     margin: 10px auto;
     font-family: var(--font-principal);
     color: var(--preto);
     text-decoration: none;
-    background-color: var(--azul-claro);
+    text-align: center;
+    background-color: transparent;
     padding: 8px 20px;
     border-radius: 10px;
     border: 2px solid var(--azul-claro);
@@ -368,7 +370,7 @@ a#see-all-travels {
 }
 
 a#see-all-travels:hover {
-    background-color: transparent;
+    background-color: var(--azul-claro);
 }
 
 section#contato {
@@ -842,11 +844,17 @@ div#copy {
         font-size: 8vw;
     }
 
+    div#inside-solicitar {
+        padding: 3vw;
+    }
+
     .travel {
         display: block;
         padding: 20px 5vw;
-        max-width: max-content;
+        width: 90vw;
+        max-width: 320px;
         margin: 20px auto;
+        border-radius: 10px;
     }
     
     .travel > div > span {
