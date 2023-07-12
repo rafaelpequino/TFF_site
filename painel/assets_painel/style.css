@@ -220,6 +220,40 @@ main#main-complete-register {
     width: 0; /* Largura da barra de rolagem */
 }
 
+#registered-customers {
+    width: 100%;
+    max-width: 2000px;
+}
+
+.users-table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.users-row > td {
+    min-width: max-content;
+}
+
+div#div-input-search-user {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    position: relative;
+    padding-left: 10px;
+}
+
+#div-input-search-user > label {
+    margin-right: 10px;
+}
+
+#div-input-search-user > button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
 .sec-content {
     display: block;
     width: 95%;
