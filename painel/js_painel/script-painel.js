@@ -1,13 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    $(document).ready(function(){
-        $('#userCellphone').mask('(00) 00000-0000');
-        $('#userBirth').mask('00/00/0000');
-        $('#userCPF').mask('000.000.000-00');
-        $('#userRG').mask('00.000.000-00');
-        $('#adressCEP').mask('00000-000');
-    })
-
     //OPEN NAVBAR
     const btnSidebar = document.getElementById('btn-sidebar')
     const sidebar = document.getElementById('sidebar')
@@ -28,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.classList.toggle('dropdown-open')
     })
 
+    $(document).ready(function(){
+        $('#userCellphone').mask('(00) 00000-0000');
+        $('#userBirth').mask('00/00/0000');
+        $('#userCPF').mask('000.000.000-00');
+        $('#userRG').mask('00.000.000-00');
+        $('#adressCEP').mask('00000-000');
+    })
 
 
 })
