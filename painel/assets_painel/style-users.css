@@ -11,31 +11,22 @@
     --font-principal: 'Montserrat', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+#content-registered-customers {
+    background-color: #fff;
+}
+
 #registered-customers {
-    width: 100%;
-    max-width: 2000px;
+    border: none;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-
-.users-table {
-    width: 100%;
-    overflow-x: scroll;
-    padding: 10px 0;
-}
-
-.users-row > th:last-child {
-    writing-mode: tb-rl; /* Define a escrita vertical */
-    transform: rotate(-180deg); 
-}
-
-.users-row > td:last-child {
-    display: flex;
-    justify-content: center;
-}
-
-.users-row > td:not(:first-child) {
-    white-space: nowrap;
-}
-
 
 div#div-input-search-user {
     display: flex;
@@ -55,4 +46,76 @@ div#div-input-search-user {
     right: 10px;
     background-color: transparent;
     border: none;
+}
+
+.users-table {
+    width: 100%;
+    margin: 10px auto;
+    overflow: auto;
+    border-radius: 12px;
+}
+
+.users-table::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.users-table::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.377);
+    visibility: hidden;
+}
+
+.users-table:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+
+.break-email {
+    word-break: break-all;
+}
+
+table {
+    width: 100%;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.100); 
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(202, 202, 202, 0.200);
+}
+
+tbody tr:hover {
+    background-color: rgba(202, 202, 202, 0.300);
+
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: block;
+    margin: 10px auto;
+}
+
+table, th, td {
+    padding: 1rem;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: center;
+}
+
+tbody td:not(:nth-child(-n+2)) {
+    white-space: nowrap;
+}
+
+tbody td:nth-child(2) {
+    min-width: 300px;
+    word-break: break-all;
 }

@@ -73,50 +73,51 @@
         <hr>
 
     </div><!--sidebar-->
-    <div class="content">
+    <div class="content" id="content-registered-customers">
 
         <section class="sec-content" id="registered-customers">
             <h5>Clientes cadastrados</h5>
             <hr>
+            <form action="" method="post" id="form-search-user">
+                <div class="mb-3" id="div-input-search-user">
+                    <label for="search-user" class="form-label">Procurar: </label>
+                    <input type="text" name="search-user" id="search-user" class="form-control" placeholder="nome ou e-mail...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
 
             <div class="users-table">
-                <form action="" method="post" id="form-search-user">
-                    <div class="mb-3" id="div-input-search-user">
-                        <label for="search-user" class="form-label">Procurar: </label>
-                        <input type="text" name="search-user" id="search-user" class="form-control" placeholder="nome ou e-mail...">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </form>
-                <table class="table table-striped table-bordered">
+                <table id="users-table">
                     <thead>
-                      <tr class="users-row">
-                        <th scope="col">Nome Completo</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Celular</th>
-                        <th scope="col">Data nascimento</th>
-                        <th scope="col">Data registro</th>
-                        <th scope="col">Viagens</th>
-                      </tr>
+                        <tr>
+                            <th> Usuário </th>
+                            <th> E-mail </th>
+                            <th> Celular </th>
+                            <th> Data nascimento </th>
+                            <th> Data registro </th>
+                            <th> <abbr title="Viagens">Vgs</abbr> </th> 
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr class="users-row">
-                        <td>Rafael Pequino Freire</td>
-                        <td>o.rafaelpequino@gmail.com</td>
-                        <td>(11) 97566-9706</td>
-                        <td>09/07/2006</td>
-                        <td>01/06/2023</td>
-                        <td>1</td>
-                      </tr>
-                      <tr class="users-row">
-                        <td>Amanda Fernanda Fernandes Fonseca</td>
-                        <td>amandafonseca@gmail.com</td>
-                        <td>(11) 98765-4321</td>
-                        <td>16/06/2005</td>
-                        <td>21/06/2023</td>
-                        <td>0</td>
-                      </tr>
+                        <tr>
+                            <td> <img src="../img/users/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Foto do usuário"> Rafael Pequino Freire</td>
+                            <td> 123456789012345678901234567890@etec.sp.gov.br </td>
+                            <td> (11) 97566-9706 </td>
+                            <td> 09/07/2006 </td>
+                            <td> 13/06/2023 </td>
+                            <td> 2 </td>
+                        </tr>
+                        <tr>
+                            <td> <img src="../img/users/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Foto do usuário"> Rafael Pequino Freire</td>
+                            <td> o.rafaelpequino@gmail.com </td>
+                            <td> (11) 97566-9706 </td>
+                            <td> 09/07/2006 </td>
+                            <td> 13/06/2023 </td>
+                            <td> 2 </td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
+                
             </div>
         </section>
     </div><!--content-->

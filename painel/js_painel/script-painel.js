@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.classList.toggle('dropdown-open')
     })
 
+    //MÁSCARAS
     $(document).ready(function(){
         $('#userCellphone').mask('(00) 00000-0000');
         $('#userBirth').mask('00/00/0000');
@@ -27,6 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#userRG').mask('00.000.000-00');
         $('#adressCEP').mask('00000-000');
     })
-
 
 })
